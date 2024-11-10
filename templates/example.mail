@@ -1,0 +1,12 @@
+From: user@example.com
+To: group@example.com
+Subject: New alert: {{ title }}
+X-Mailer: python-webhook
+
+New alert submitted via webhook
+
+State: {{ state }}
+Time: {{ alerts[0].startsAt }}
+URL: {{ alerts[0].externalURL }}
+
+{{ message }}
